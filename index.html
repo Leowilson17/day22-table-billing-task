@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/reset.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cookie&family=Karla:wght@300&family=Montserrat&family=Nunito+Sans:wght@700&family=Poppins:wght@300&family=Raleway:wght@300&display=swap" rel="stylesheet">
+   <link rel="stylesheet" href="/css/style.css"> 
+</head>
+<body>
+    <div class="container">
+    
+    <table>
+        <caption>Billing System</caption>
+        <tr id="row-section">
+            <td>product name</td>
+            <td>quantity</td>
+            <td>unit price</td>
+            <td>price</td>
+        </tr>
+        <tr class="data-section">
+            <td>smart tv</td>
+            <td><select name="" id="tv" onchange="tv_price()">
+                <option value="0">0</option>
+                <option value="1">1</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+                <option value="5">5</option>
+                <option value="6">6</option>
+                <option value="7">7</option>
+                <option value="8">8</option>
+                <option value="9">9</option>
+                <option value="10">10</option>
+            </select></td>
+            <td>35,000</td>
+            <td id="price_for_tv"></td>
+        </tr>
+        <tr class="data-section">
+            <td>refrigerator</td>
+            <td><select name="" id="friedge" onchange="freidge_price()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            </select></td>
+            <td>14,000</td>
+            <td id="price_for_refri">
+            </td>
+        </tr>
+        <tr  class ="data-section">
+            <td>fan</td>
+            <td>
+                <select name="" id="fans" onchange="fan_price()">
+                        <option value="0">0</option>
+                        <option value="1">1</option>
+                        <option value="2">2</option>
+                        <option value="3">3</option>
+                        <option value="4">4</option>
+                        <option value="5">5</option>
+                        <option value="6">6</option>
+                        <option value="7">7</option>
+                        <option value="8">8</option>
+                        <option value="9">9</option>
+                        <option value="10">10</option>
+                </select>
+                <td>3000</td>
+                <td id="price_for_fan"></td>
+            </td>
+        </tr>
+        <tr class = "data-section">
+            <td>microwave ovan</td>
+            <td><select name="" id="ovan" onchange="ovan_price()">
+                    <option value="0">0</option>
+                    <option value="1">1</option>
+                    <option value="2">2</option>
+                    <option value="3">3</option>
+                    <option value="4">4</option>
+                    <option value="5">5</option>
+                    <option value="6">6</option>
+                    <option value="7">7</option>
+                    <option value="8">8</option>
+                    <option value="9">9</option>
+                    <option value="10">10</option>
+            </select></td>
+            <td>11,500</td>
+            <td id="price_for_ovan"></td>
+        </tr>
+<tr class="data-section">
+    <td>air condition</td>
+    <td><select name="" id="ac" onchange="ac_price()">
+            <option value="0">0</option>
+            <option value="1">1</option>
+            <option value="2">2</option>
+            <option value="3">3</option>
+            <option value="4">4</option>
+            <option value="5">5</option>
+            <option value="6">6</option>
+            <option value="7">7</option>
+            <option value="8">8</option>
+            <option value="9">9</option>
+            <option value="10">10</option>
+    </select></td>
+    <td>25000</td>
+    <td id="price_for_ac"></td>
+</tr>
+<tr class="total-section">
+    <td colspan="3" class="right" id="total" >total</td>
+    <td id="display_total"></td>
+
+</tr>
+<tr class="total-section">
+    <td colspan="3" class ="right">tax</td>
+    <td id="tax"></td>
+</tr>
+<tr class="total-section">
+    <td colspan="3" class="right">grand total</td>
+    <td id="gtotal"></td>
+</tr>
+    </table>
+    </div>
+    <script src="/script.js"></script>
+</body>
+</html>
